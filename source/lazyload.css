@@ -1,0 +1,29 @@
+/**
+ * @author Ondrej Bina
+ * @version 1.1
+ * @description JavaScript LazyLoad library
+ * @source https://github.com/binaondrej/LazyLoadJS
+ */
+html, body {
+  overflow-x: hidden;
+  --lazyload-translate: 30vh;
+  --lazyload-transition: 1.5s;
+}
+.lazyload {
+  position: relative;
+  opacity: 0;
+}
+.lazyload.lazyload-bottom {
+  transform: translateY(var(--lazyload-translate));
+}
+.lazyload.lazyload-left {
+  transform: translateX(calc(var(--lazyload-translate) * -1));
+}
+.lazyload.lazyload-right {
+  transform: translateX(var(--lazyload-translate));
+}
+.lazyload.lazyload-done {
+  transition: all var(--lazyload-transition) ease;
+  transform: translate(0);
+  opacity: 1;
+}

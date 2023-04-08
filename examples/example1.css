@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+#section-start {
+    background-color: hotpink;
+    color: black;
+    font-size: 2rem;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#section-end {
+    background-color: deeppink;
+    height: 15vh;
+}
+
+#section-sides {
+    background-color: limegreen;
+    padding: 1rem 0;
+}
+#section-sides > div {
+    background-color: blue;
+    margin: 1rem;
+    height: auto;
+    width: 33%;
+    min-width: 50px;
+    aspect-ratio: 4 / 3;
+}
+#section-sides > div:nth-child(even) {
+    margin-left: auto;
+}
+
+
+#section-bottom {
+    background-color: indigo;
+    padding: 1rem 0;
+}
+#section-bottom > div {
+    background-color: aqua;
+    margin: 2rem auto;
+    width: 66%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
